@@ -1,0 +1,81 @@
+<!-- Extra Spicy Page, with no extra features -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="Stylesheets/Sheet.css" rel="stylesheet">
+    <link href="Stylesheets/Spice.css" rel="stylesheet">
+    <title>Hydrogen</title>
+</head>
+<body>
+<header>
+    <section class="menu-handle-container" data-menu-handle>
+        <section class="burger">
+            <span class="ham"></span>
+            <span class="ham"></span>
+            <span class="ham"></span>
+        </section>
+    </section>
+    <section class="site-title">DAV Model School</section>
+    <section class="route js-route"></section>
+    <div class="divider"></div>
+</header>
+<section class="overlay js-overlay"></section>
+<main>
+    <aside class="sidebar-link-container">
+        <a class="sidebar-link active js-auto-init" data-page-anchor="Home" href="home.html">Home</a>
+        <a class="sidebar-link" data-page-anchor="Infrastructures" href="infrastructures.html">Infrastructures</a>
+        <a class="sidebar-link" data-page-anchor="Facilities" href="facilities.html">Facilities</a>
+        <a class="sidebar-link" data-page-anchor="Uniform" href="uniform.html">Uniform</a>
+        <a class="sidebar-link" data-page-anchor="Motto" href="motto.html">Motto</a>
+        <a class="sidebar-link" data-page-anchor="ExtraCurricular Activities" href="ExtraCurricularActivities.html">ExtraCurricular Activities</a>
+        <a class="sidebar-link" data-page-anchor="About" href="about.html">About the site</a>
+    </aside>
+    <section class="content" data-page-content></section>
+</main>
+<section class="loader-overlay js-loader-overlay">
+    <section>
+        <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+        </div>
+        <span class="title">Loading {page}...</span>
+    </section>
+</section>
+<section class="intro-overlay js-intro-overlay">
+    <section>
+        <h1 class="title">F.I.T Project</h1>
+        <h2 class="subtitle">By, Spandan Das (X-B, 48)</h2>
+        <p class="description">
+            This is the project work that I have created in order to display
+            the workings of the Markup Language 'HTML'. It portrays the information
+            provided by the sample example given in the book as well as some
+            given in the school website <a href="http://davmodeldurgapur.com">davmodeldurgapur.com</a>.
+            This project is licensed under MIT, and the distribution of this source code
+            is perceptively allowed; though a reference to the author would de
+            dearly appreciated.
+            This project also uses various type fonts licensed under OFL and Apache v2
+            respectively, 'Quicksand' and 'Open Sans' respectively. They are present
+            under the directory <code>/Fonts</code>. And all the images are licensed
+            under GPL and CC by SA 2.0; and previous permission has been granted from the
+            respective owners for the Community use of them. They are present in the directory <code>/Images</code>.
+            The JavaScript used is ES6 complaint, that is ECMAScript 2015. To know if
+            your browser supports these features, please refer to <a href="https://caniuse.com">caniuse.com</a>.
+            The code is present under the directory <code>/Scripts</code>.
+            The CSS stylesheets are developed by hand, and no external modules have been used.
+            The stylesheets can be found under the directory <code>/Stylesheets</code>.
+        </p>
+        <section>
+            <button class="enter-button js-enter-button">See the project</button>
+            <input type="checkbox" id="switch" name="no-intro" class="switch-input" data-remember-intro-removal>
+            <label for="switch" class="switch-label">Do not show this intro overlay upon next visit</label>
+        </section>
+    </section>
+</section>
+<script src="Scripts/Script.js"></script>
+<script src="Scripts/Navigator.Overlay.js"></script>
+<script src="Scripts/Page.Navigator.js"></script>
+</body>
+</html>

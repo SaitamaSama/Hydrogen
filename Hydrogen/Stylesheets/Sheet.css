@@ -1,0 +1,166 @@
+@font-face {
+    font-family: "Open Sans";
+    font-weight: 400;
+    src: url(../Fonts/OpenSans-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Open Sans";
+    font-weight: 300;
+    src: url(../Fonts/OpenSans-Light.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Open Sans";
+    font-weight: 700;
+    src: url(../Fonts/OpenSans-Bold.ttf) format('truetype');
+}
+html {
+    height: 100%;
+}
+body {
+    font-family: "Open Sans", Roboto, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+header {
+    width: calc(100% - 20px);
+    padding: 0 10px;
+    height: 70px;
+    background: #2dd881;
+    color: #444444;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+header .site-title {
+    font-size: 26px;
+}
+header .divider {
+    flex-grow: 1;
+}
+header .school {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+main {
+    width: 100%;
+    height: calc(100% - 70px);
+    display: flex;
+    margin: 70px 0 0 0;
+}
+main aside.sidebar-link-container {
+    width: 290px;
+    background: #FFFFFF;
+    height: 100%;
+    z-index: 4;
+}
+aside.sidebar-link-container a.sidebar-link {
+    width: calc(100% - 20px);
+    padding: 12px 10px;
+    font-size: 14px;
+    color: #363636;
+    display: block;
+    text-decoration: none;
+    margin: 5px 0;
+    position: relative;
+}
+aside.sidebar-link-container a.sidebar-link.active {
+    color: #2dd881;
+}
+
+main .content {
+    flex-grow: 1;
+    overflow: auto;
+    padding: 10px;
+    color: #363636;
+    z-index: 3;
+}
+
+.content .paragraph {
+    margin: 8px 0;
+}
+.content .w-60 {
+    width: 60%;
+}
+.content a, .intro-overlay a {
+    background: linear-gradient(to top,rgba(40,225,189,.8) 50%,rgba(255,255,255,0) 50%);
+    transition: background-position .3s cubic-bezier(.64,.09,.08,1);
+    will-change: background-position;
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    background-size: 100% 200%;
+    background-position: 0 10%;
+    background-repeat: no-repeat;
+}
+.content a:hover, .intro-overlay a:hover {
+    background-position: 0 100%;
+}
+
+.content .cover-image-container {
+    width: calc(100% + 20px);
+    margin: -10px -10px 0 -10px;
+    display: flex;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+    position: relative;
+}
+.content .cover-image-container .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: calc(100% - 40px);
+    padding-left: 40px;
+    font-size: 42px;
+    color: #FFFFFF;
+    background: rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    filter: blur(0);
+    font-weight: 700;
+}
+.card-container-center {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0;
+}
+.card {
+    width: 300px;
+    height: 350px;
+    border-radius: 3px;
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+    flex-direction: column;
+    display: flex;
+    margin: 0 7px;
+}
+.card-background {
+    height: 45%;
+    border-radius: 3px 3px 0 0;
+    background-position: center;
+    background-size: cover;
+}
+.card .card-content {
+    background: #FFFFFF;
+    flex-grow: 1;
+    border-radius: 0 0 3px 3px;
+    padding: 10px;
+}
+.card > .card-content > .card-title {
+    font-weight: 400;
+    font-size: 22px;
+    margin: 5px 0;
+}
+.card > .card-content > .text {
+    line-height: 1.4;
+    font-size: 13px;
+}
